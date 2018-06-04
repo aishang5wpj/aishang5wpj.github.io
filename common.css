@@ -42,16 +42,17 @@ body {
 }
 
 #songName {
-    font-size: 6;
+    font-size: 25px;
 }
 
 #authorName {
-    font-size: 3;
+    font-size: 15px;
 }
 
 #lyric {
     color: white;
     text-align: center;
+    font-size: 15px;
 }
 
 </style>
