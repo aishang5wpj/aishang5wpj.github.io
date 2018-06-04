@@ -1,19 +1,57 @@
 <style type="text/css">a:link {
-    color: red;
+    color: white;
     text-decoration: none;
 }
 
 a:visited {
-    color: pink;
+    color: white;
+    text-decoration: none;
 }
 
 a:hover {
-    color: green;
-    text-decoration: underline;
+    color: white;
+    text-decoration: none;
 }
 
 a:active {
-    color: black;
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("images/bg.webp");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    /* 兼容Webkit内核浏览器如Chrome和Safari */
+    -o-background-size: cover;
+    /* 兼容Opera */
+    zoom: 1;
+}
+
+#songName {
+    font-size: 6;
+}
+
+#authorName {
+    font-size: 3;
+}
+
+#lyric {
+    color: white;
+    text-align: center;
 }
 
 </style>
