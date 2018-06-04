@@ -1,0 +1,19 @@
+<style type="text/css">a:link {
+    color: red;
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+}
+
+a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+a:active {
+    color: black;
+}
+
+</style>
