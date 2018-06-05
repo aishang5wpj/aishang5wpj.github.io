@@ -5,13 +5,15 @@
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <link rel="stylesheet" type="text/css" href="common.css">
     <title>Cheers! 🍺</title>
+    <script type="text/javascript" src="index.js"></script>
 </head>
 
 <body>
-    <!--  移动端有限制，需要手动触发 (微信用audio不能自动播放)
+    <!--  移动端有限制，需要手动触发 (github用audio不能自动播放)
     <embed src="./songs/于果-侧脸.mp3" autostart="true" loop="true" hidden="true"></embed>
-  	 -->
-    <audio src="./songs/于果-侧脸.mp3" hidden="true" autoplay="true" loop="true"></audio>
+    <audio id="bgm" src="./songs/于果-侧脸.mp3" loop autoplay preload="auto"></audio>
+	-->
+    <audio id="bgm" src="./songs/于果-侧脸.mp3" hidden="true" autoplay="true" loop="true"></audio>
     <div id="bg">
         <div id="lyric">
             </br>
