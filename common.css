@@ -21,6 +21,7 @@ a:active {
 body {
     margin: 0;
     padding: 0;
+    font-size: 1em;
 }
 
 #bg {
@@ -42,17 +43,18 @@ body {
 }
 
 #songName {
-    font-size: 25px;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 #authorName {
-    font-size: 15px;
+    font-size: 0.625em;
 }
 
 #lyric {
     color: white;
     text-align: center;
-    font-size: 15px;
+    font-size: 0.875em;
 }
 
 </style>
