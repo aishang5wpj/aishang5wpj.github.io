@@ -1,24 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-    //开始播放时，改变图标以及开始旋转封面
-    document.getElementById('bgm').onplaying = function() {
-        timer = setInterval(function() {
-            document.getElementById("songImg").style.transform = "rotatez(" + rot + "deg)";
-            rot += 0.5;
-        }, 50)
-        document.getElementById("play").src = "images/pause.svg";
-    }
-    //暂停播放时，改变图标以及停止旋转封面
-    document.getElementById('bgm').onpause = function() {
-        clearInterval(timer);
-        document.getElementById("play").src = "images/play.svg";
-    }
     //给播放按钮添加点击事件
     document.getElementById("play").onclick = function() {
         var isPaused = document.getElementById("bgm").paused;
-        if (!isPaused) {
-            pause();
-        } else {
+        if (isPaused) {
             play();
+        } else {
+            pause();
         }
     };
     document.getElementById("songImgContainer").onclick = function() {
@@ -43,20 +30,28 @@ document.addEventListener('touchstart', function() {
 
 var rot = 0;
 var timer;
-window.onload = function() {};
 
+//开始播放时，改变图标以及开始旋转封面
 function play() {
     var audio = document.getElementById('bgm');
     if (!audio.paused) {
         return;
     }
     audio.play();
+    timer = setInterval(function() {
+        document.getElementById("songImg").style.transform = "rotatez(" + rot + "deg)";
+        rot += 0.5;
+    }, 50)
+    document.getElementById("play").src = "images/pause.svg";
 }
 
+//暂停播放时，改变图标以及停止旋转封面
 function pause() {
     var audio = document.getElementById('bgm');
     if (audio.paused) {
         return;
     }
     audio.pause();
+    clearInterval(timer);
+    document.getElementById("play").src = "images/play.svg";
 }
