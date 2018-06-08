@@ -1,0 +1,84 @@
+#removeBlurWhiteBorder {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#bg {
+    height: 100%;
+    width: 100%;
+    transform: scale(1.1);
+    background-image: url("images/bg.jpg");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    /* 兼容Webkit内核浏览器如Chrome和Safari */
+    -o-background-size: cover;
+    /* 兼容Opera */
+    zoom: 1;
+    /* 高斯模糊 */
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+}
+
+#songName {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#authorName {
+    font-size: 0.625em;
+}
+
+#songImgContainer {
+    position: relative;
+    margin: 50% auto 0px auto;
+    /* div为正方形 */
+    width: 150px;
+    height: 150px;
+    /* 圆的半径为边长的一半*/
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    /* 阴影*/
+    box-shadow: 0px 0px 20px 5px #33333333;
+    overflow: hidden;
+}
+
+#console {
+    position: relative;
+    margin: 30% 0px 0px 0px;
+    /* div为正方形 */
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+#play {
+    position: relative;
+    margin: 0px 20px;
+    /* div为正方形 */
+    width: 25px;
+    height: 25px;
+}
+
+#volume {
+    position: relative;
+    margin: 0px auto;
+    /* div为正方形 */
+    width: 25px;
+    height: 25px;
+}
+
+#lyric {
+    text-align: center;
+    font-size: 0.813em;
+}

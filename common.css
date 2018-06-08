@@ -1,4 +1,4 @@
-<style type="text/css">a:link {
+a:link {
     color: white;
     text-decoration: none;
 }
@@ -21,40 +21,13 @@ a:active {
 body {
     margin: 0;
     padding: 0;
+    color: white;
     font-size: 1em;
 }
 
-#bg {
+.full {
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+    /* div为正方形 */
     width: 100%;
-    background-image: url("images/bg.jpg");
-    background-position: center 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    /* 兼容Webkit内核浏览器如Chrome和Safari */
-    -o-background-size: cover;
-    /* 兼容Opera */
-    zoom: 1;
+    height: 100%;
 }
-
-#songName {
-    font-size: 1.5em;
-    text-align: center;
-}
-
-#authorName {
-    font-size: 0.625em;
-}
-
-#lyric {
-    color: white;
-    text-align: center;
-    font-size: 0.875em;
-}
-
-</style>
