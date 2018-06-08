@@ -1,18 +1,4 @@
-//--创建页面监听，等待微信端页面加载完毕 触发音频播放
 document.addEventListener('DOMContentLoaded', function() {
-    play();
-});
-document.addEventListener("WeixinJSBridgeReady", function() {
-    play();
-});
-//--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
-document.addEventListener('touchstart', function() {
-    play();
-}, { capture: true, once: true });
-
-var rot = 0;
-var timer;
-window.onload = function() {
     //开始播放时，改变图标以及开始旋转封面
     document.getElementById('bgm').onplaying = function() {
         timer = setInterval(function() {
@@ -43,7 +29,21 @@ window.onload = function() {
         document.getElementById("radio").style.visibility = "visible";
         document.getElementById("lyric").style.visibility = "hidden";
     }
-};
+    //--创建页面监听，等待微信端页面加载完毕 触发音频播放
+    document.addEventListener("WeixinJSBridgeReady", function() {
+        play();
+    });
+    //开始播放
+    play();
+});
+//--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
+document.addEventListener('touchstart', function() {
+    play();
+}, { capture: true, once: true });
+
+var rot = 0;
+var timer;
+window.onload = function() {};
 
 function play() {
     var audio = document.getElementById('bgm');
