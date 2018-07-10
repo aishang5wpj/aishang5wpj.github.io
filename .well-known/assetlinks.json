@@ -6,20 +6,4 @@
     "sha256_cert_fingerprints":
     ["1E:49:B4:58:EF:38:B7:9D:CA:7E:DB:46:F1:DD:32:44:D6:1F:54:A0:1A:49:E4:CA:0B:DD:A0:D1:10:EE:38:CE"]
   }
-},
-{
-  "relation": ["delegate_permission/common.get_login_creds"],
-  "target": {
-    "namespace": "web",
-    "site": "https://aishang5wpj.github.io"
-  }
-},
-{
-  "relation": ["delegate_permission/common.get_login_creds"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.aishang5wpj.instantproduct",
-    "sha256_cert_fingerprints":
-    ["1E:49:B4:58:EF:38:B7:9D:CA:7E:DB:46:F1:DD:32:44:D6:1F:54:A0:1A:49:E4:CA:0B:DD:A0:D1:10:EE:38:CE"]
-  }
 }]
